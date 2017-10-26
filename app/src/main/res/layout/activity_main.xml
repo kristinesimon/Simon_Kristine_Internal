@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kristine.message.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:id="@+id/tv_msg"
+        android:layout_alignParentStart="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:layout_width="194dp"
+        android:layout_height="55dp"
+        android:id="@+id/et_message"
+        android:layout_below="@+id/tv_msg"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_display"
+        android:text="Display"
+        android:layout_below="@+id/et_message"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        android:text="Save"
+        android:layout_below="@+id/et_password"
+        android:layout_toRightOf="@+id/btn_display"
+        android:onClick="saveInfo"/>
+
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="45dp"
+        android:id="@+id/tv_display"
+        android:layout_below="@+id/btn_save"
+        android:onClick="loadInfo"/>
+
+
+
+</RelativeLayout>
